@@ -1,0 +1,537 @@
+{
+    "start": {
+        "question": "👋 Hi there! So glad to see you here at Datt Mediproducts.\n\nHow can I assist you today?",
+        "options": [],
+        "next": "start_followup"
+    },
+    "start_followup": {
+        "question": "Just tap the option that fits your needs best — I’m right here with you. 😊",
+        "options": [
+            {"text": "Product Inquiry", "next": "first"},
+            {"text": "Bulk Orders", "next": "second"},
+            {"text": "Distributorship Opportunity", "next": "third"},
+            {"text": "Online Purchase", "next": "fourth"},
+            {"text": "Support", "next": "fifth"},
+            {"text": "Career", "next": "sixth"},
+            {"text": "Know About Us", "next": "seventh"},
+            {"text": "Other", "next": "eighth"}      
+        ]
+    },
+    "first":{
+        "question": "Got a question about any of our products? I’d be happy to help you find exactly what you need.",
+        "options": [
+            {"text": "Show me wound care products", "next": "inq_one"},
+            {"text": "Show me advanced wound care", "next": "inq_two"},
+            {"text": "I need to download product catalogues", "next": "inq_three"}
+        ]
+    },
+    "inq_one":{
+        "question": "Click this link to see all wound care products:\n\n🔗<a href='https://dattmedi.com/products/wound-care.html' class='chat-link' target='_blank'>https://dattmedi.com/products/wound-care.html</a>\n\nThere’s a black strip on the page to help you filter products by category.",
+        "options": [],
+        "next": "inq_one_followup"
+    },
+    "inq_one_followup":{
+        "question": "Hope this helps! Do you have any other questions? 🙂",
+        "options": [
+            {"text": "Yes","next": "inq_one_mail"},
+            {"text": "No", "next": "inq_one_goodbye"}
+        ],
+        "layout": "inline"
+    },
+    "inq_one_mail":{
+        "question": "Great! Feel free to ask, or email us at \n📩 online@dattmedi.com",
+        "options": []
+    },
+    "inq_one_goodbye":{
+        "question": "Tata bye bye! 👋 Come back anytime.",
+        "options": []
+    },
+    "inq_two":{
+        "question": "Here’s the link to all advanced wound care products: \n\n🔗<a href='https://dattmedi.com/products/advance-wound-care.html' class='chat-link' target='_blank'>https://dattmedi.com/products/advance-wound-care.html</a>\n\nUse the black strip to filter and find exactly what you need.",
+        "options": [],
+        "next": "inq_two_followup"
+    },
+    "inq_two_followup":{
+        "question": "Hope this serves your purpose!\nAny other questions I can help with? 🙂",
+        "options": [
+            {"text": "Yes","next": "inq_two_mail"},
+            {"text": "No", "next": "inq_two_goodbye"}
+        ],
+        "layout": "inline"
+    },
+    "inq_two_mail":{
+        "question": "You can type your question or email us at \n📩 online@dattmedi.com",
+        "options": []
+    },
+    "inq_two_goodbye":{
+        "question": "Okay! Take care and visit again anytime.👋",
+        "options": []
+    },
+    "inq_three":{
+        "question": "Of course! 😊 Here's how you can download the product brochures:\n\n<strong>Step 1:</strong> \nVisit the category you're interested in –\n\n🔹For Wound Care: \n\n<a href='https://dattmedi.com/products/wound-care.html' class='chat-link' target='_blank'>https://dattmedi.com/products/wound-care.html</a>\n\n🔹For Advanced Wound Care: \n\n<a href='https://dattmedi.com/products/advance-wound-care.html' class='chat-link' target='_blank'>https://dattmedi.com/products/advance-wound-care.html</a>\n\n<strong>Step 2:</strong> \nBrowse and click on the product you want to know more about.\n\n<strong>Step 3:</strong> \nOn the product page, look to the right side:\nYou’ll see a ‘Download Brochure’ button.\n\nClick it and your catalogue will be downloaded 📄",
+        "options": [],
+        "next": "inq_three_followup"
+    },
+    "inq_three_followup":{
+        "question": "Let me know if you need help with anything else! 😊",
+        "options": [
+            {"text": "Yes","next": "inq_three_mail"},
+            {"text": "No", "next": "inq_three_goodbye"}
+        ],
+        "layout": "inline"
+    },
+    "inq_three_mail":{
+        "question": "Go ahead and ask, or email us at \n📩 online@dattmedi.com",
+        "options": []
+    },
+    "inq_three_goodbye":{
+        "question": "Okay! Have a great day and come back anytime. 👋",
+        "options": []
+    },
+    "second":{
+        "question": "Looking to place a bulk order? That’s great to hear! 😊\nCan you tell me who you are?",
+        "options": [
+            {"text": "Patient / Caregiver", "next": "order_one"},
+            {"text": "Pharmacy", "next": "order_two"},
+            {"text": "Retailer", "next": "order_three"},
+            {"text": "E-commerce Seller", "next": "order_four"},
+            {"text": "Other", "next": "order_five"}
+        ]
+    },
+    "order_one":{
+        "question": "Thanks! For smaller bulk needs (like stocking up at home), the easiest way is through our bulk order page.",
+        "options": [],
+        "next": "order_one_link"
+    },
+    "order_one_link": {
+        "question": "🛒 Click here to place a bulk order directly: \n\n👉 <a href='https://dattmedi.com/eshop/bulk-order/' class='chat-link' target='_blank'>https://dattmedi.com/eshop/bulk-order/</a>",
+        "options": [],
+        "next": "order_one_followup"
+    },
+    "order_one_followup":{
+        "question": " Was this helpful, or would you like to speak to someone?",
+        "options": [
+            {"text": "Yes, helpful","next": "order_one_happy"},
+            {"text": "I want to talk", "next": "order_one_talk"}
+        ],
+        "layout": "inline"
+    },
+    "order_one_happy":{
+        "question": " Glad to know that! 😊 Let me know if you need anything else.",
+        "options": []
+    },
+    "order_one_talk":{
+        "question": "Sure! You can contact our team directly at 📩 online@dattmedi.com or 📞 +91-98106 33482.",
+        "options": []
+    },
+    "order_two":{
+        "question": "We’d love to support your pharmacy with bulk medical supplies.",
+        "options": [],
+        "next": "order_two_link"
+    },
+    "order_two_link": {
+        "question": "You can place your order here: <br><br>👉 <a href='https://dattmedi.com/eshop/bulk-order/' class='chat-link' target='_blank'>https://dattmedi.com/eshop/bulk-order/</a>\n\nOr for custom pricing and stock queries:\n📩 online@dattmedi.com | 📞 +91-98106 33482.",
+        "options": [],
+        "next": "order_two_followup"
+    },
+    "order_two_followup":{
+        "question": "Would you like to contact our team directly for further assistance?",
+        "options": [
+            {"text": "Yes","next": "order_two_contact"},
+            {"text": "No", "next": "order_two_goodbye"}
+        ],
+        "layout": "inline"
+    },
+    "order_two_contact":{
+        "question": "You can reach out to our team at\n📩 online@dattmedi.com or 📞 +91-98106 33482.",
+        "options": []
+    },
+    "order_two_goodbye":{
+        "question": "No worries! You can reach us anytime if you need help.",
+        "options": []
+    },
+    "order_three":{
+        "question": "Great choice! You can quickly place your bulk request here:\n\n👉 <a href='https://dattmedi.com/eshop/bulk-order/' class='chat-link' target='_blank'>https://dattmedi.com/eshop/bulk-order/</a>\n\nIf you’d prefer to speak to someone:\n📩 online@dattmedi.com | 📞 +91-98106 33482.",
+        "options": [],
+        "next": "order_three_followup"
+    },
+    "order_three_followup":{
+        "question": "Should you need further assistance, feel free to contact our team directly.",
+        "options": [
+            {"text": "Yes","next": "order_two_contact"},
+            {"text": "No", "next": "order_three_goodbye"}
+        ],
+        "layout": "inline"
+    },
+    "order_three_goodbye":{
+        "question": "Alright! Feel free to explore the site or message us anytime.",
+        "options": []
+    },
+    "order_four":{
+        "question": "Awesome! We support e-commerce sellers with stock, product info, and fast delivery.",
+        "options": [],
+        "next": "order_four_link"
+    },
+    "order_four_link": {
+        "question": "You can begin by placing a request here: <br><br>👉 <a href='https://dattmedi.com/eshop/bulk-order/' class='chat-link' target='_blank'>https://dattmedi.com/eshop/bulk-order/</a>\n\nAnd for more details, email us your list at 📩 online@dattmedi.com",
+        "options": [],
+        "next": "order_four_followup"
+    },
+    "order_four_followup":{
+        "question": "If you need assistance, please feel free to contact our team directly at the provided contact details.",
+        "options": [
+            {"text": "Yes","next": "order_two_contact"},
+            {"text": "No", "next": "order_four_goodbye"}
+        ],
+        "layout": "inline"
+    },
+    "order_four_goodbye":{
+        "question": "Cool! You can always get in touch when you’re ready",
+        "options": []
+    },
+    "order_five":{
+        "question": "Got it! No matter your background, you can start with our bulk order page here:\n\n👉 <a href='https://dattmedi.com/eshop/bulk-order/' class='chat-link' target='_blank'>https://dattmedi.com/eshop/bulk-order/</a>\n\nFor custom support, drop us a mail at\n📩 info@dattmedi.com or call 📞 +91-98106 33482.",
+        "options": [],
+        "next": "order_five_followup"
+    },
+    "order_five_followup":{
+        "question": "Should you need any further assistance, our team is available at\n📩 online@dattmedi.com or 📞+91-98106 33482.",
+        "options": [
+            {"text": "Yes","next": "order_five_contact"},
+            {"text": "No", "next": "order_five_goodbye"}
+        ],
+        "layout": "inline"
+    },
+    "order_five_contact":{
+        "question": "Feel free to reach our team at\n📩 online@dattmedi.com or 📞 +91-98106 33482.",
+        "options": []
+    },
+    "order_five_goodbye":{
+        "question": "Alright! Have a great day ahead. Let me know if anything else comes up.",
+        "options": []
+    },
+    "third":{
+        "question": "Thanks for your interest in partnering with us! 😊\nWe truly value collaborations and are always open to exploring new distributor relationships.",
+        "options": [],
+        "next": "third_followup"
+    },
+    "third_followup":{
+        "question": "To get started, can you tell us a bit about yourself?",
+        "options": [
+            {"text": "I'm a distributor from India", "next": "dist_one"},
+            {"text": "I'm an international distributor", "next": "dist_two"},
+            {"text": "I just want to know the process", "next": "dist_three"}
+        ]
+    },
+    "dist_one":{
+        "question": "That’s great to know! 🇮🇳",
+        "options": [],
+        "next": "dist_one_link"
+    },
+    "dist_one_link": {
+        "question": "You can explore how distributorship works and fill out your details here: <br><br>👉 <a href='https://dattmedi.com/distributor-india/' class='chat-link' target='_blank'>https://dattmedi.com/distributor-india/</a>\n\nWe’ll review your request and connect with you soon.",
+        "options": [],
+        "next": "dist_one_followup"
+    },
+    "dist_one_followup":{
+        "question": "If you'd prefer to speak to someone directly, feel free to reach us at:\n📩 online@dattmedi.com | 📞 +91-98106 33482",
+        "options": []
+    },
+    "dist_two":{
+        "question": "Wonderful! 🌍 We love working with global partners.",
+        "options": [],
+        "next": "dist_two_link"
+    },
+    "dist_two_link": {
+        "question": "You can learn more and send us your details here: <br><br>👉 <a href=' https://dattmedi.com/distributor-international/' class='chat-link' target='_blank'> https://dattmedi.com/distributor-international/</a>\n\nOnce we receive your form, our team will review and respond.",
+        "options": [],
+        "next": "dist_two_followup"
+    },
+    "dist_two_followup":{
+        "question": "If you want to directly reach out, contact us at:\n📩 online@dattmedi.com | 📞 +91-98106 33482.",
+        "options": []
+    },
+    "dist_three":{
+        "question": "Of course! Here's a quick look at the distributorship process:\n\n1. Fill out the relevant form on our website\n2. Our team reviews your details\n3. We reach out to discuss the opportunity\n4. If it’s a good fit, we take things forward together 🤝",
+        "options": [],
+        "next": "dist_three_link"
+    },
+    "dist_three_link": {
+        "question": "Choose based on your region: <br><br>👉  India:<br><br><a href='https://dattmedi.com/distributor-india/' class='chat-link' target='_blank'> https://dattmedi.com/distributor-india/</a><br><br>👉  International:<br><br><a href=' https://dattmedi.com/distributor-international/' class='chat-link' target='_blank'> https://dattmedi.com/distributor-international/</a>",
+        "options": [],
+        "next": "dist_three_followup"
+    },
+    "dist_three_followup":{
+        "question": "Still have questions? Feel free to contact us at:\n📩 online@dattmedi.com | 📞 +91-98106 33482.",
+        "options": []
+    },
+    "fourth":{
+        "question": "Looking to shop online? 😊 That’s perfect!",
+        "options": [],
+        "next": "fourth_link"
+    },
+    "fourth_link":{
+        "question": "Our eShop has a wide range of wound care and first-aid products. You can explore and order directly from here: <br><br>👉 <a href='https://dattmedi.com/eshop/' class='chat-link' target='_blank'>https://dattmedi.com/eshop/</a>",
+        "options": [],
+        "next": "fourth_followup"
+    },
+    "fourth_followup":{
+        "question": "Would you like help navigating the store?",
+        "options": [
+            {"text": "Show me all products", "next": "purchase_one"},
+            {"text": "How to browse by category", "next": "purchase_two"},
+            {"text": "I want to buy in bulk", "next": "purchase_three"},
+            {"text": "Need help with checkout", "next": "purchase_four"}
+        ]
+    },
+    "purchase_one":{
+        "question": "Sure! You can view all available products here: <br><br>👉 <a href='https://dattmedi.com/eshop/' class='chat-link' target='_blank'>https://dattmedi.com/eshop/</a>\n\nThere’s a white category menu at the top — use it to browse by type. The “Sort by” option on the right can help you filter too.",
+        "options": [],
+        "next": "purchase_one_followup"
+    },
+    "purchase_one_followup":{
+        "question": "Need help finding something specific? Contact us anytime at:\n📩 online@dattmedi.com | 📞 +91-98106 33482",
+        "options": []
+    },
+    "purchase_two":{
+        "question": "On our eShop page <br><br>👉 <a href='https://dattmedi.com/eshop/' class='chat-link' target='_blank'>https://dattmedi.com/eshop/</a>\n\nYou’ll see a white menu with categories like Wound Care, Orthopedic Supports, etc. Just click on a category to view those products.\nUse the “Sort by” option on the right to arrange products by popularity, price, or latest.",
+        "options": [],
+        "next": "purchase_two_followup"
+    },
+    "purchase_two_followup":{
+        "question": "Still need help? Feel free to reach out:\n📩 online@dattmedi.com | 📞 +91-98106 33482",
+        "options": []
+    },
+    "purchase_three":{
+        "question": "For bulk purchases, please use our bulk order form here:<br><br>👉 <a href='https://dattmedi.com/eshop/bulk-order/' class='chat-link' target='_blank'>https://dattmedi.com/eshop/bulk-order/</a>\n\nIt’s quick and easy. Fill in your requirements, and we’ll reach out shortly.",
+        "options": [],
+        "next": "purchase_three_followup"
+    },
+    "purchase_three_followup":{
+        "question": "For urgent queries, contact us directly at:\n📩 online@dattmedi.com | 📞 +91-98106 33482",
+        "options": []
+    },
+    "purchase_four":{
+        "question": "No worries — we’re here to help you!",
+        "options": [],
+        "next": "purchase_four_query"
+    },
+    "purchase_four_query":{
+        "question": "Make sure you're logged in, add your products to cart, and proceed to checkout. Still stuck? Just reach out and we’ll assist you.",
+        "options": [],
+        "next": "purchase_four_followup"
+    },
+    "purchase_four_followup":{
+        "question": "You can contact our team anytime at:\n📩 online@dattmedi.com | 📞 +91-98106 33482",
+        "options": []
+    },
+    "fifth":{
+        "question": " Sorry you're facing a problem. I'm here to guide you! 😊\nCan you tell me what kind of support you need?",
+        "options": [
+            {"text": "I received a wrong or damaged product", "next": "support_one"},
+            {"text": "I have a question about my order", "next": "support_two"},
+            {"text": "I need technical help with a product", "next": "support_three"},
+            {"text": "Other issues", "next": "support_four"}
+        ]
+    },
+    "support_one":{
+        "question": " We're truly sorry for the trouble caused. 😔\nPlease contact our support team directly so they can help you as soon as possible.\n\n📩 Email: online@dattmedi.com\n📞 Call: +91-98106 33482",
+        "options": [],
+        "next": "support_one_followup"
+    },
+    "support_one_followup":{
+        "question": "Was this helpful, or is there anything else I can assist you with?",
+        "options": [
+            {"text": "Yes, I need more help", "next": "support_one_help"},
+            {"text": "No, all good for now", "next": "support_one_goodbye"}
+        ],
+        "layout": "inline"
+    },
+    "support_one_help":{
+        "question": "Sure! Please select a different option from the main menu so I can assist you further. 😊",
+        "options": [
+            {"text": "I received a wrong or damaged product", "next": "support_one"},
+            {"text": "I have a question about my order", "next": "support_two"},
+            {"text": "I need technical help with a product", "next": "support_three"},
+            {"text": "Other issues", "next": "support_four"}
+        ]
+    },
+    "support_one_goodbye":{
+        "question": "Glad I could help. Take care and feel free to reach out anytime! 👋",
+        "options": []
+    },
+    "support_two":{
+        "question": "Let’s help you with that. 😊\nFor any questions about your order status, shipping, or payment:\n\n📩 Email: online@dattmedi.com\n📞 Call: +91-98106 33482",
+        "options": [],
+        "next": "support_one_followup"
+    },
+    "support_three":{
+        "question": "Got it! Whether it's about how to use the product or understanding its features, our team is happy to help.\n\n📩 Drop your query at: online@dattmedi.com\n📞 Or call: +91-98106 33482",
+        "options": [],
+        "next": "support_one_followup"
+    },
+    "support_four":{
+        "question": "No worries — we’re here for you. 💬\nPlease describe your issue by emailing or calling our team:\n\n📩 online@dattmedi.com\n📞 +91-98106 33482\n\nWe’ll make sure you get the support you need.",
+        "options": [],
+        "next": "support_one_followup"
+    },
+    "sixth":{
+        "question": "Thinking about joining our team? That’s wonderful to hear! 😊\nWe always love connecting with passionate and driven people.",
+        "options": [],
+        "next": "sixth_followup"
+    },
+    "sixth_followup":{
+        "question": "How would you like to get started?",
+        "options": [
+            {"text": "Visit career page", "next": "career_one"},
+            {"text": "Email my resume", "next": "career_two"},
+            {"text": "Know about your company", "next": "career_three"}
+        ]
+    },
+    "career_one":{
+        "question": "You can visit our Career page here and explore or fill out the form if you're interested:<br><br>🔗 <a href='https://dattmedi.com/career.html' class='chat-link' target='_blank'>https://dattmedi.com/career.html</a>\n\nWe’ll get in touch if there’s a suitable opportunity. 😊",
+        "options": [],
+        "next": "career_one_followup"
+    },
+    "career_one_followup":{
+        "question": "Was this helpful, or would you like help with something else?",
+        "options": [
+            {"text": "Yes", "next": "career_one_more"},
+            {"text": "No", "next": "career_one_goodbye"}
+        ],
+        "layout": "inline"
+    },
+    "career_one_more":{
+        "question": "Perfect! Just choose another option from the menu and I’ll be here to assist. 😊",
+         "options": [
+            {"text": "Visit career page", "next": "career_one"},
+            {"text": "Email my resume", "next": "career_two"},
+            {"text": "Know about your company", "next": "career_three"}
+        ]
+    },
+    "career_one_goodbye":{
+        "question": "No worries. Thanks for visiting! Wishing you all the best. 🌸",
+        "options": []
+    },
+    "career_two":{
+        "question": "You can send your resume along with a short introduction to:\n📩 careers@dattmedi.com\n📞 Or call us at: +91-98106 33482\n\nOr simply fill out the form here:\n\n🔗 <a href='https://dattmedi.com/career.html' class='chat-link' target='_blank'>https://dattmedi.com/career.html</a>\n\nWe’ll review and get back to you. 😊",
+        "options": [],
+        "next": "career_one_followup"
+    },
+     "career_three":{
+        "question": "Absolutely! You can know more about us here:\n\n🔗 <a href='https://dattmedi.com/about.html' class='chat-link' target='_blank'>https://dattmedi.com/about.html</a>\n\nIt has our story, vision, and the journey so far. We hope it inspires you! 💙",
+        "options": [],
+        "next": "career_one_followup"
+    },
+    "seventh":{
+        "question": "Curious to know more about us? We’d love to share! 😊\nPick what you’d like to explore:",
+        "options": [
+            {"text": "About the company", "next": "about_one"},
+            {"text": "Your product range", "next": "about_two"},
+            {"text": "Your Story, Certifications & R&D", "next": "about_three"}
+        ]
+    },
+    "about_one":{
+        "question": "You can learn about who we are, what we do, and how we work right here:<br><br>🔗 <a href='https://dattmedi.com/about.html' class='chat-link' target='_blank'>https://dattmedi.com/about.html</a>\n\nHope you enjoy getting to know us a little better! 💙",
+        "options": [],
+        "next": "about_one_followup"
+    },
+    "about_one_followup":{
+        "question": "Was this helpful, or would you like help with something else?",
+        "options": [
+            {"text": "Yes", "next": "about_one_more"},
+            {"text": "No", "next": "about_one_goodbye"}
+        ],
+        "layout": "inline"
+    },
+    "about_one_more":{
+        "question": "Great! Feel free to choose another option anytime. 😊",
+        "options": []
+    },
+    "about_one_goodbye":{
+        "question": "Alright. Thank you for visiting! Have a peaceful day ahead. 🌿",
+        "options": []
+    },
+    "about_two":{
+        "question": "Glad you asked! 😊 Here's where you can explore our product range:<br><br>🔹For Wound Care:<br><br><a href='https://dattmedi.com/products/wound-care.html' class='chat-link' target='_blank'>https://dattmedi.com/products/wound-care.html</a><br><br>🔹For Advanced Wound Care:<br><br><a href='https://dattmedi.com/products/advance-wound-care.html' class='chat-link' target='_blank'>https://dattmedi.com/products/advance-wound-care.html</a><br><br>🔹For select items available for online purchase:<br><br><a href='https://dattmedi.com/eshop/' class='chat-link' target='_blank'>https://dattmedi.com/eshop/</a><br>(You can use the top white bar to filter by category)<br><br>Take your time browsing — we’re always here if you need help! 💙",
+        "options": [],
+        "next": "about_two_followup"
+    },
+    "about_two_followup":{
+        "question": "Was this helpful, or would you like help with something else?",
+        "options": [
+            {"text": "Yes", "next": "about_two_more"},
+            {"text": "No", "next": "about_two_goodbye"}
+        ],
+        "layout": "inline"
+    },
+    "about_two_more":{
+        "question": "Lovely! You’re welcome to explore more anytime. 😊",
+        "options": []
+    },
+    "about_two_goodbye":{
+        "question": "Alright. Thank you for visiting. Take care! 🌿",
+        "options": []
+    },
+    "about_three":{
+        "question": "We’d love for you to get to know us better 💙<br>Here’s where you can explore more about who we are and what we stand for:<br><br>🔹Our Journey – how we started and grew:<br><br><a href='https://dattmedi.com/about-us/' class='chat-link' target='_blank'>https://dattmedi.com/about-us/</a><br><br>🔹Our Certifications – what makes us credible:<br><br><a href='https://dattmedi.com/certifications/' class='chat-link' target='_blank'>https://dattmedi.com/certifications/</a><br><br>🔹Our R&D – the innovation behind our products:<br><br><a href='https://dattmedi.com/research-development/' class='chat-link' target='_blank'>https://dattmedi.com/research-development/</a><br><br>Feel free to take a look — we hope it brings you closer to our purpose 🌿",
+        "options": [],
+        "next": "about_three_followup"
+    },
+    "about_three_followup":{
+        "question": " Would you like to explore anything else?",
+        "options": [
+            {"text": "Yes", "next": "about_three_more"},
+            {"text": "No", "next": "about_three_goodbye"}
+        ],
+        "layout": "inline"
+    },
+    "about_three_more":{
+        "question": "Sure! Please choose from the options again 😊",
+        "options": [
+            {"text": "About the company", "next": "about_one"},
+            {"text": "Your product range", "next": "about_two"},
+            {"text": "Your Story, Certifications & R&D", "next": "about_three"}
+        ]
+    },
+    "about_three_goodbye":{
+        "question": "Thanks for stopping by. Wishing you a great day ahead! 🌟",
+        "options": []
+    },
+    "eighth":{
+        "question": "Not sure where to go? No worries — I’m here to help 😊\nPlease let me know what you’re looking for, and I’ll try my best to guide you.",
+        "options": [],
+        "expectInput": true,
+        "next": "eighth_query"
+    },
+    "eighth_query":{
+        "question": "Thanks for sharing!\nFor anything that needs personal help or quick replies, feel free to reach out directly:\n\n📧 Email: online@dattmedi.com\n📞 Call: +91-98106 33482\n\nOur team will be happy to assist you 💙",
+        "options": [],
+        "next": "eighth_followup"
+    },
+    "eighth_followup":{
+        "question": "Was there anything else you'd like help with?",
+        "options": [
+            {"text": "Yes", "next": "eighth_more"},
+            {"text": "No", "next": "eighth_goodbye"}
+        ],
+        "layout": "inline"
+    },
+    "eighth_more":{
+        "question": "Sure thing! Please choose an option or share your question 😊",
+        "options": [
+            {"text": "Product Inquiry", "next": "first"},
+            {"text": "Bulk Orders", "next": "second"},
+            {"text": "Distributorship Opportunity", "next": "third"},
+            {"text": "Online Purchase", "next": "fourth"},
+            {"text": "Support", "next": "fifth"},
+            {"text": "Career", "next": "sixth"},
+            {"text": "Know About Us", "next": "seventh"},
+            {"text": "Other", "next": "eighth"}      
+        ]
+    },
+    "eighth_goodbye":{
+        "question": "Thank you for visiting us today. Take care and stay well! 🌿",
+        "options": []
+    }
+}
