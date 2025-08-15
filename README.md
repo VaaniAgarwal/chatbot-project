@@ -1,5 +1,9 @@
 # AI Chatbot
 
+🔗 **Live Demo:** [Click here to try the chatbot](https://vaaniagarwal.github.io/chatbot-project/)
+
+![Chatbot Screenshot](screenshot.png)
+
 This is a simple chatbot built using **HTML, CSS, JavaScript, and JSON**.  
 It runs directly in the browser — no backend required.
 
